@@ -149,19 +149,31 @@
       "id": "math_and_algorithm_o",
       "label": "015",
       "title": "Calculate GCD",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_o"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_o",
+      "directory": {
+        "path": "015",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_p",
       "label": "016",
       "title": "Greatest Common Divisor of N Integers",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_p"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_p",
+      "directory": {
+        "path": "016",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_q",
       "label": "017",
       "title": "Least Common Multiple of N Integers",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_q"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_q",
+      "directory": {
+        "path": "017",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_r",
