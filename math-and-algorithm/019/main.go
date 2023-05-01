@@ -22,15 +22,9 @@ func main() {
 	}
 
 	var cnt int
-	if a1 > 1 {
-		cnt += (a1 * (a1 - 1)) / 2
-	}
-	if a2 > 1 {
-		cnt += (a2 * (a2 - 1)) / 2
-	}
-	if a3 > 1 {
-		cnt += (a3 * (a3 - 1)) / 2
-	}
+	cnt += (a1 * (a1 - 1)) / 2
+	cnt += (a2 * (a2 - 1)) / 2
+	cnt += (a3 * (a3 - 1)) / 2
 
 	fmt.Println(cnt)
 }

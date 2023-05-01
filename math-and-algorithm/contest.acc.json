@@ -209,13 +209,21 @@
       "id": "math_and_algorithm_u",
       "label": "021",
       "title": "Combination Easy",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_u"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_u",
+      "directory": {
+        "path": "021",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_v",
       "label": "022",
       "title": "Choose Cards 3",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_v"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_v",
+      "directory": {
+        "path": "022",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_w",
