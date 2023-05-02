@@ -229,25 +229,41 @@
       "id": "math_and_algorithm_w",
       "label": "023",
       "title": "Dice Expectation",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_w"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_w",
+      "directory": {
+        "path": "023",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_x",
       "label": "024",
       "title": "Answer Exam Randomly",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_x"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_x",
+      "directory": {
+        "path": "024",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_y",
       "label": "025",
       "title": "Jiro's Vacation",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_y"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_y",
+      "directory": {
+        "path": "025",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_z",
       "label": "026",
       "title": "Coin Gacha",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_z"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_z",
+      "directory": {
+        "path": "026",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_aa",
