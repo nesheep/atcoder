@@ -32,44 +32,36 @@ func main() {
 }
 
 func MargeSort(a []int) {
+	if len(a) == 1 {
+		return
+	}
+
+	m := len(a) / 2
+	MargeSort(a[:m])
+	MargeSort(a[m:])
+
+	c1 := 0
+	c2 := m
+	cnt := 0
 	c := make([]int, len(a))
-
-	var f func(l, r int)
-	f = func(l, r int) {
-		if r-l == 1 {
-			return
-		}
-
-		m := (l + r) / 2
-		f(l, m)
-		f(m, r)
-
-		c1 := l
-		c2 := m
-		var cnt int
-		for c1 != m || c2 != r {
-			if c1 == m {
-				c[cnt] = a[c2]
-				c2++
-			} else if c2 == r {
+	for c1 != m || c2 != len(a) {
+		if c1 == m {
+			c[cnt] = a[c2]
+			c2++
+		} else if c2 == len(a) {
+			c[cnt] = a[c1]
+			c1++
+		} else {
+			if a[c1] < a[c2] {
 				c[cnt] = a[c1]
 				c1++
 			} else {
-				if a[c1] < a[c2] {
-					c[cnt] = a[c1]
-					c1++
-				} else {
-					c[cnt] = a[c2]
-					c2++
-				}
+				c[cnt] = a[c2]
+				c2++
 			}
-			cnt++
 		}
-
-		for i := 0; i < cnt; i++ {
-			a[l+i] = c[i]
-		}
+		cnt++
 	}
 
-	f(0, len(a))
+	copy(a, c)
 }
