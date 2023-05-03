@@ -1,34 +1,42 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func gcd(a, b int) int {
-	for a >= 1 && b >= 1 {
-		if a < b {
-			b %= a
-		} else {
-			a %= b
+	var f func(a, b int) int
+	f = func(a, b int) int {
+		if b == 0 {
+			return a
 		}
+		return f(b, a%b)
 	}
-	if a >= 1 {
-		return a
+	if a >= b {
+		return f(a, b)
 	}
-	return b
+	return f(b, a)
 }
 
 func main() {
+	r := bufio.NewReader(os.Stdin)
+	w := bufio.NewWriter(os.Stdout)
+	defer w.Flush()
+
 	var n int
-	fmt.Scan(&n)
+	fmt.Fscan(r, &n)
 
 	a := make([]int, n)
 	for i := 0; i < n; i++ {
-		fmt.Scan(&a[i])
+		fmt.Fscan(r, &a[i])
 	}
 
-	res := a[0]
+	ans := a[0]
 	for i := 1; i < n; i++ {
-		res = gcd(res, a[i])
+		ans = gcd(ans, a[i])
 	}
 
-	fmt.Println(res)
+	fmt.Fprintln(w, ans)
 }
