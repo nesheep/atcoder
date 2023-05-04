@@ -329,7 +329,11 @@
       "id": "math_and_algorithm_ae",
       "label": "033",
       "title": "Distance",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ae"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ae",
+      "directory": {
+        "path": "033",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_af",
