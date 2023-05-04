@@ -319,7 +319,11 @@
       "id": "math_and_algorithm_ad",
       "label": "032",
       "title": "Binary Search",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ad"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ad",
+      "directory": {
+        "path": "032",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ae",
