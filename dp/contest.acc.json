@@ -19,7 +19,11 @@
       "id": "dp_b",
       "label": "B",
       "title": "Frog 2",
-      "url": "https://atcoder.jp/contests/dp/tasks/dp_b"
+      "url": "https://atcoder.jp/contests/dp/tasks/dp_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "dp_c",
