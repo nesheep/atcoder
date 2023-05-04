@@ -279,25 +279,41 @@
       "id": "dp_a",
       "label": "028",
       "title": "Frog 1",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/dp_a"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/dp_a",
+      "directory": {
+        "path": "028",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ab",
       "label": "029",
       "title": "Climb Stairs",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ab"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ab",
+      "directory": {
+        "path": "029",
+        "testdir": "tests"
+      }
     },
     {
       "id": "dp_d",
       "label": "030",
       "title": "Knapsack 1",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/dp_d"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/dp_d",
+      "directory": {
+        "path": "030",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ac",
       "label": "031",
       "title": "Taro's Vacation",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ac"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ac",
+      "directory": {
+        "path": "031",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ad",
