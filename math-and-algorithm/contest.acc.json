@@ -369,7 +369,11 @@
       "id": "math_and_algorithm_ah",
       "label": "037",
       "title": "Intersection",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ah"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ah",
+      "directory": {
+        "path": "037",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ai",
