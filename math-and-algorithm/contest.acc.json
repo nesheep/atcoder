@@ -349,7 +349,11 @@
       "id": "math_and_algorithm_ag",
       "label": "035",
       "title": "Two Circles",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ag"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ag",
+      "directory": {
+        "path": "035",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc168_c",
