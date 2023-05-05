@@ -359,7 +359,11 @@
       "id": "abc168_c",
       "label": "036",
       "title": ": (Colon)",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/abc168_c"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/abc168_c",
+      "directory": {
+        "path": "036",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ah",
