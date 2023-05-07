@@ -399,7 +399,11 @@
       "id": "math_and_algorithm_ak",
       "label": "040",
       "title": "Travel",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ak"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ak",
+      "directory": {
+        "path": "040",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_al",
