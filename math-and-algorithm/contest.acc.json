@@ -379,13 +379,21 @@
       "id": "math_and_algorithm_ai",
       "label": "038",
       "title": "How Many Guests?",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ai"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ai",
+      "directory": {
+        "path": "038",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_aj",
       "label": "039",
       "title": "Snowy Days",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_aj"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_aj",
+      "directory": {
+        "path": "039",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ak",
