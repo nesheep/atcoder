@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -25,16 +26,16 @@ func main() {
 		as[rs[i]+1] -= xs[i]
 	}
 
-	var ans string
+	ans := make([]string, 0, n-1)
 	for i := 2; i <= n; i++ {
 		if as[i] < 0 {
-			ans += ">"
+			ans = append(ans, ">")
 		} else if as[i] == 0 {
-			ans += "="
+			ans = append(ans, "=")
 		} else {
-			ans += "<"
+			ans = append(ans, "<")
 		}
 	}
 
-	fmt.Println(ans)
+	fmt.Println(strings.Join(ans, ""))
 }
