@@ -409,7 +409,11 @@
       "id": "math_and_algorithm_al",
       "label": "041",
       "title": "Convenience Store 2",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_al"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_al",
+      "directory": {
+        "path": "041",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc172_d",
