@@ -10,24 +10,32 @@ func main() {
 	var n int
 	fmt.Scan(&n)
 
-	ps := make([]int, 0, n)
+	p := make([]bool, n+1)
 	for i := 2; i <= n; i++ {
-		isPN := true
-		for _, p := range ps {
-			if i%p == 0 {
-				isPN = false
-				break
+		p[i] = true
+	}
+
+	for i := 2; i+i <= n; i++ {
+		if p[i] {
+			for j := i * 2; j <= n; j += i {
+				p[j] = false
 			}
 		}
-		if isPN {
-			ps = append(ps, i)
+	}
+
+	var m int
+	for i := 2; i <= n; i++ {
+		if p[i] {
+			m++
 		}
 	}
 
-	psa := make([]string, 0, len(ps))
-	for _, p := range ps {
-		psa = append(psa, strconv.Itoa(p))
+	ans := make([]string, 0, m)
+	for i := 2; i <= n; i++ {
+		if p[i] {
+			ans = append(ans, strconv.Itoa(i))
+		}
 	}
 
-	fmt.Println(strings.Join(psa, " "))
+	fmt.Println(strings.Join(ans, " "))
 }
