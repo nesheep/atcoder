@@ -19,7 +19,11 @@
       "id": "abc288_b",
       "label": "B",
       "title": "Qualification Contest",
-      "url": "https://atcoder.jp/contests/abc288/tasks/abc288_b"
+      "url": "https://atcoder.jp/contests/abc288/tasks/abc288_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc288_c",
