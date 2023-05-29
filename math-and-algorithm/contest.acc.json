@@ -419,7 +419,11 @@
       "id": "abc172_d",
       "label": "042",
       "title": "Sum of Divisors",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/abc172_d"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/abc172_d",
+      "directory": {
+        "path": "042",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_am",
