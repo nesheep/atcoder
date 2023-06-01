@@ -19,7 +19,11 @@
       "id": "abc285_b",
       "label": "B",
       "title": "Longest Uncommon Prefix",
-      "url": "https://atcoder.jp/contests/abc285/tasks/abc285_b"
+      "url": "https://atcoder.jp/contests/abc285/tasks/abc285_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc285_c",
