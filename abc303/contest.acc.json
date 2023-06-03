@@ -19,7 +19,11 @@
       "id": "abc303_b",
       "label": "B",
       "title": "Discord",
-      "url": "https://atcoder.jp/contests/abc303/tasks/abc303_b"
+      "url": "https://atcoder.jp/contests/abc303/tasks/abc303_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc303_c",
