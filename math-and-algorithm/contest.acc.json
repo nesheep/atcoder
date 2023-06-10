@@ -429,7 +429,11 @@
       "id": "math_and_algorithm_am",
       "label": "043",
       "title": "Depth First Search",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_am"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_am",
+      "directory": {
+        "path": "043",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_an",
