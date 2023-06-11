@@ -439,7 +439,11 @@
       "id": "math_and_algorithm_an",
       "label": "044",
       "title": "Shortest Path 1",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_an"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_an",
+      "directory": {
+        "path": "044",
+        "testdir": "tests"
+      }
     },
     {
       "id": "typical90_bz",
