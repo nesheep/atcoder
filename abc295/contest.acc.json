@@ -19,7 +19,11 @@
       "id": "abc295_b",
       "label": "B",
       "title": "Bombs",
-      "url": "https://atcoder.jp/contests/abc295/tasks/abc295_b"
+      "url": "https://atcoder.jp/contests/abc295/tasks/abc295_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc295_c",
