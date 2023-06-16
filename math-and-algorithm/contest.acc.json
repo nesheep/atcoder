@@ -459,7 +459,11 @@
       "id": "abc007_3",
       "label": "046",
       "title": "幅優先探索",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/abc007_3"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/abc007_3",
+      "directory": {
+        "path": "046",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ao",
