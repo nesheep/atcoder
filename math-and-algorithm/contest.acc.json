@@ -449,7 +449,11 @@
       "id": "typical90_bz",
       "label": "045",
       "title": "Easy Graph Problem（★2）",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/typical90_bz"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/typical90_bz",
+      "directory": {
+        "path": "045",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc007_3",
