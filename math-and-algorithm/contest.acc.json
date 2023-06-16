@@ -469,7 +469,11 @@
       "id": "math_and_algorithm_ao",
       "label": "047",
       "title": "Bipartite Graph",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ao"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ao",
+      "directory": {
+        "path": "047",
+        "testdir": "tests"
+      }
     },
     {
       "id": "arc084_b",
