@@ -11,14 +11,13 @@ func main() {
 	wr := bufio.NewWriter(os.Stdout)
 	defer wr.Flush()
 
-	var a, x, ans uint64
-	x = 1
+	var a bool
+	var ans uint64
 	for i := 0; i < 64; i++ {
 		fmt.Fscan(rd, &a)
-		if a == 1 {
-			ans += x
+		if a {
+			ans += 1 << uint64(i)
 		}
-		x *= 2
 	}
 
 	fmt.Fprintln(wr, ans)
