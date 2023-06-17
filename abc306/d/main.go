@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"math"
 	"os"
 )
 
@@ -22,35 +21,17 @@ func main() {
 	var n int
 	fmt.Fscan(rd, &n)
 
-	x := make([]bool, n)
-	y := make([]int, n)
+	var x bool
+	var y int
+	dp := [2]int{}
 	for i := 0; i < n; i++ {
-		fmt.Fscan(rd, &x[i], &y[i])
-	}
-
-	d := make([]int, n)
-	e := make([]int, n)
-	f := make([]int, n)
-	g := make([]int, n)
-	if x[0] {
-		f[0] = math.MinInt64
-		g[0] = y[0]
-	} else {
-		f[0] = y[0]
-		g[0] = math.MinInt64
-	}
-
-	for i := 1; i < n; i++ {
-		d[i] = max(d[i-1], f[i-1])
-		e[i] = max(e[i-1], g[i-1])
-		if x[i] {
-			f[i] = math.MinInt64
-			g[i] = max(d[i-1], f[i-1]) + y[i]
+		fmt.Fscan(rd, &x, &y)
+		if x {
+			dp[1] = max(dp[1], dp[0]+y)
 		} else {
-			f[i] = max(max(d[i-1], e[i-1]), max(f[i-1], g[i-1])) + y[i]
-			g[i] = math.MinInt64
+			dp[0] = max(max(dp[0], dp[0]+y), dp[1]+y)
 		}
 	}
 
-	fmt.Fprintln(wr, max(max(d[n-1], e[n-1]), max(f[n-1], g[n-1])))
+	fmt.Fprintln(wr, max(dp[0], dp[1]))
 }
