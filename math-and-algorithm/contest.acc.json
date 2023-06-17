@@ -479,7 +479,11 @@
       "id": "arc084_b",
       "label": "048",
       "title": "Small Multiple",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/arc084_b"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/arc084_b",
+      "directory": {
+        "path": "048",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ap",
