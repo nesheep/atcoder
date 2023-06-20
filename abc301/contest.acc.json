@@ -29,7 +29,11 @@
       "id": "abc301_c",
       "label": "C",
       "title": "AtCoder Cards",
-      "url": "https://atcoder.jp/contests/abc301/tasks/abc301_c"
+      "url": "https://atcoder.jp/contests/abc301/tasks/abc301_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc301_d",
