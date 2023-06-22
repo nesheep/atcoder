@@ -29,7 +29,11 @@
       "id": "abc298_c",
       "label": "C",
       "title": "Cards Query Problem",
-      "url": "https://atcoder.jp/contests/abc298/tasks/abc298_c"
+      "url": "https://atcoder.jp/contests/abc298/tasks/abc298_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc298_d",
