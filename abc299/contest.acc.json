@@ -29,7 +29,11 @@
       "id": "abc299_c",
       "label": "C",
       "title": "Dango",
-      "url": "https://atcoder.jp/contests/abc299/tasks/abc299_c"
+      "url": "https://atcoder.jp/contests/abc299/tasks/abc299_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc299_d",
