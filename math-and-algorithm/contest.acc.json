@@ -489,7 +489,11 @@
       "id": "math_and_algorithm_ap",
       "label": "049",
       "title": "Fibonacci Easy (mod 1000000007)",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ap"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ap",
+      "directory": {
+        "path": "049",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_aq",
