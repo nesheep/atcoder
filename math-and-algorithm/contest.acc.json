@@ -519,7 +519,11 @@
       "id": "abc145_d",
       "label": "052",
       "title": "Knight",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/abc145_d"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/abc145_d",
+      "directory": {
+        "path": "052",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_as",
