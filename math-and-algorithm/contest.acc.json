@@ -499,7 +499,11 @@
       "id": "math_and_algorithm_aq",
       "label": "050",
       "title": "Power",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_aq"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_aq",
+      "directory": {
+        "path": "050",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ar",
