@@ -509,7 +509,11 @@
       "id": "math_and_algorithm_ar",
       "label": "051",
       "title": "Combination Hard",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ar"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ar",
+      "directory": {
+        "path": "051",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc145_d",

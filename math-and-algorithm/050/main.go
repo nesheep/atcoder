@@ -2,11 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
-	var a, b int
-	fmt.Scan(&a, &b)
-
-	mod := 1000000007
+func modpow(a, b, mod int) int {
 	p := a
 	ans := 1
 	for i := 0; i < 30; i++ {
@@ -15,6 +11,13 @@ func main() {
 		}
 		p = (p * p) % mod
 	}
+	return ans
+}
 
-	fmt.Println(ans)
+func main() {
+	var a, b int
+	fmt.Scan(&a, &b)
+
+	mod := 1000000007
+	fmt.Println(modpow(a, b, mod))
 }
