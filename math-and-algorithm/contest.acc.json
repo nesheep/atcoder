@@ -569,7 +569,11 @@
       "id": "math_and_algorithm_aw",
       "label": "057",
       "title": "Domino Tiling",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_aw"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_aw",
+      "directory": {
+        "path": "057",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ax",
