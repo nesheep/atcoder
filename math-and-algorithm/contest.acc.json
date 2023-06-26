@@ -559,7 +559,11 @@
       "id": "math_and_algorithm_av",
       "label": "056",
       "title": "Recurrence Formula 2",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_av"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_av",
+      "directory": {
+        "path": "056",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_aw",
