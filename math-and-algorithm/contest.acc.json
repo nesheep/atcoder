@@ -529,7 +529,11 @@
       "id": "math_and_algorithm_as",
       "label": "053",
       "title": "Sum of 4^N",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_as"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_as",
+      "directory": {
+        "path": "053",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_at",
