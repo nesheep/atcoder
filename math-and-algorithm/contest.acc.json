@@ -539,7 +539,11 @@
       "id": "math_and_algorithm_at",
       "label": "054",
       "title": "Fibonacci Hard (mod 1000000000)",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_at"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_at",
+      "directory": {
+        "path": "054",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_au",
