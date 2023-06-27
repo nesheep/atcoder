@@ -589,7 +589,11 @@
       "id": "math_and_algorithm_ay",
       "label": "059",
       "title": "Power of Two",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ay"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ay",
+      "directory": {
+        "path": "059",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_az",
