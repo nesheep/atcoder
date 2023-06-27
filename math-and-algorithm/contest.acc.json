@@ -579,7 +579,11 @@
       "id": "math_and_algorithm_ax",
       "label": "058",
       "title": "Move on Squares 1",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ax"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ax",
+      "directory": {
+        "path": "058",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ay",
