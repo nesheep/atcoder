@@ -599,7 +599,11 @@
       "id": "math_and_algorithm_az",
       "label": "060",
       "title": "Stones Game 1",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_az"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_az",
+      "directory": {
+        "path": "060",
+        "testdir": "tests"
+      }
     },
     {
       "id": "math_and_algorithm_ba",
