@@ -29,7 +29,11 @@
       "id": "abc290_c",
       "label": "C",
       "title": "Max MEX",
-      "url": "https://atcoder.jp/contests/abc290/tasks/abc290_c"
+      "url": "https://atcoder.jp/contests/abc290/tasks/abc290_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc290_d",
