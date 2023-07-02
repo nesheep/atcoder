@@ -19,7 +19,11 @@
       "id": "abc308_b",
       "label": "B",
       "title": "Default Price",
-      "url": "https://atcoder.jp/contests/abc308/tasks/abc308_b"
+      "url": "https://atcoder.jp/contests/abc308/tasks/abc308_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc308_c",
