@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-type persion struct {
+type person struct {
 	id, a, b int
 }
 
@@ -21,7 +21,7 @@ func main() {
 	var n int
 	fmt.Fscan(rd, &n)
 
-	p := make([]persion, n)
+	p := make([]person, n)
 	for i := range p {
 		p[i].id = i + 1
 		fmt.Fscan(rd, &p[i].a, &p[i].b)
