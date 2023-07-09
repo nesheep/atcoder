@@ -29,7 +29,11 @@
       "id": "abc309_c",
       "label": "C",
       "title": "Medicine",
-      "url": "https://atcoder.jp/contests/abc309/tasks/abc309_c"
+      "url": "https://atcoder.jp/contests/abc309/tasks/abc309_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc309_d",
