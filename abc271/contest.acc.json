@@ -19,7 +19,11 @@
       "id": "abc271_b",
       "label": "B",
       "title": "Maintain Multiple Sequences",
-      "url": "https://atcoder.jp/contests/abc271/tasks/abc271_b"
+      "url": "https://atcoder.jp/contests/abc271/tasks/abc271_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc271_c",
