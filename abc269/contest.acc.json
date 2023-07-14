@@ -19,7 +19,11 @@
       "id": "abc269_b",
       "label": "B",
       "title": "Rectangle Detection",
-      "url": "https://atcoder.jp/contests/abc269/tasks/abc269_b"
+      "url": "https://atcoder.jp/contests/abc269/tasks/abc269_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc269_c",
