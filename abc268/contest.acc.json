@@ -19,7 +19,11 @@
       "id": "abc268_b",
       "label": "B",
       "title": "Prefix?",
-      "url": "https://atcoder.jp/contests/abc268/tasks/abc268_b"
+      "url": "https://atcoder.jp/contests/abc268/tasks/abc268_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc268_c",
