@@ -19,7 +19,11 @@
       "id": "abc267_b",
       "label": "B",
       "title": "Split?",
-      "url": "https://atcoder.jp/contests/abc267/tasks/abc267_b"
+      "url": "https://atcoder.jp/contests/abc267/tasks/abc267_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc267_c",
