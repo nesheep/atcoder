@@ -29,7 +29,11 @@
       "id": "abc310_c",
       "label": "C",
       "title": "Reversible",
-      "url": "https://atcoder.jp/contests/abc310/tasks/abc310_c"
+      "url": "https://atcoder.jp/contests/abc310/tasks/abc310_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc310_d",
