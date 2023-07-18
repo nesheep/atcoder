@@ -19,7 +19,11 @@
       "id": "abc266_b",
       "label": "B",
       "title": "Modulo Number",
-      "url": "https://atcoder.jp/contests/abc266/tasks/abc266_b"
+      "url": "https://atcoder.jp/contests/abc266/tasks/abc266_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc266_c",
