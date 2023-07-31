@@ -19,7 +19,11 @@
       "id": "abc312_b",
       "label": "B",
       "title": "TaK Code",
-      "url": "https://atcoder.jp/contests/abc312/tasks/abc312_b"
+      "url": "https://atcoder.jp/contests/abc312/tasks/abc312_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc312_c",
