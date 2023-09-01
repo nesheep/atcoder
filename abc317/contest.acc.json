@@ -19,7 +19,11 @@
       "id": "abc317_b",
       "label": "B",
       "title": "MissingNo.",
-      "url": "https://atcoder.jp/contests/abc317/tasks/abc317_b"
+      "url": "https://atcoder.jp/contests/abc317/tasks/abc317_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc317_c",
