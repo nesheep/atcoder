@@ -29,7 +29,11 @@
       "id": "abc324_c",
       "label": "C",
       "title": "Error Correction",
-      "url": "https://atcoder.jp/contests/abc324/tasks/abc324_c"
+      "url": "https://atcoder.jp/contests/abc324/tasks/abc324_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc324_d",
