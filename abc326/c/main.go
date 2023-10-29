@@ -20,19 +20,12 @@ func main() {
 
 	sort.Ints(a)
 
-	b := make([]int, n)
-	for i := 0; i < n; i++ {
-		for j := 0; j <= i; j++ {
-			if a[i]-a[j] < m {
-				b[j]++
-			}
-		}
-	}
-
 	var ans int
 	for i := 0; i < n; i++ {
-		if b[i] > ans {
-			ans = b[i]
+		j := sort.Search(n, func(k int) bool { return a[k] >= a[i]+m })
+		d := j - i
+		if d > ans {
+			ans = d
 		}
 	}
 
