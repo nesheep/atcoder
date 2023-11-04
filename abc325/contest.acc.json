@@ -29,7 +29,11 @@
       "id": "abc325_c",
       "label": "C",
       "title": "Sensors",
-      "url": "https://atcoder.jp/contests/abc325/tasks/abc325_c"
+      "url": "https://atcoder.jp/contests/abc325/tasks/abc325_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc325_d",
