@@ -19,7 +19,11 @@
       "id": "abc251_b",
       "label": "B",
       "title": "At Most 3 (Judge ver.)",
-      "url": "https://atcoder.jp/contests/abc251/tasks/abc251_b"
+      "url": "https://atcoder.jp/contests/abc251/tasks/abc251_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc251_c",
