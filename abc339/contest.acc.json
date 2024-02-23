@@ -19,7 +19,11 @@
       "id": "abc339_b",
       "label": "B",
       "title": "Langton's Takahashi",
-      "url": "https://atcoder.jp/contests/abc339/tasks/abc339_b"
+      "url": "https://atcoder.jp/contests/abc339/tasks/abc339_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc339_c",
