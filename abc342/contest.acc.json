@@ -19,7 +19,11 @@
       "id": "abc342_b",
       "label": "B",
       "title": "Which is ahead?",
-      "url": "https://atcoder.jp/contests/abc342/tasks/abc342_b"
+      "url": "https://atcoder.jp/contests/abc342/tasks/abc342_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc342_c",
