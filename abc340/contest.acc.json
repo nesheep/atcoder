@@ -29,7 +29,11 @@
       "id": "abc340_c",
       "label": "C",
       "title": "Divide and Divide",
-      "url": "https://atcoder.jp/contests/abc340/tasks/abc340_c"
+      "url": "https://atcoder.jp/contests/abc340/tasks/abc340_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc340_d",
