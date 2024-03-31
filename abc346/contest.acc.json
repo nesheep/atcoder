@@ -19,7 +19,11 @@
       "id": "abc346_b",
       "label": "B",
       "title": "Piano",
-      "url": "https://atcoder.jp/contests/abc346/tasks/abc346_b"
+      "url": "https://atcoder.jp/contests/abc346/tasks/abc346_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc346_c",
