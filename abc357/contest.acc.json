@@ -19,7 +19,11 @@
       "id": "abc357_b",
       "label": "B",
       "title": "Uppercase and Lowercase",
-      "url": "https://atcoder.jp/contests/abc357/tasks/abc357_b"
+      "url": "https://atcoder.jp/contests/abc357/tasks/abc357_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc357_c",
