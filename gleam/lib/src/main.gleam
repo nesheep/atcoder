@@ -8,8 +8,18 @@ import stdin
 
 pub fn main() {
   let in = stdin.stdin()
-  in |> read_ints
-  in |> read_float
+  let _ = in |> read_int
+  let _ = in |> read_ints
+  let _ = in |> read_float
+}
+
+fn read_int(in: iterator.Iterator(String)) -> Int {
+  in
+  |> iterator.first
+  |> result.unwrap("")
+  |> string.trim
+  |> int.parse
+  |> result.unwrap(0)
 }
 
 fn read_ints(in: iterator.Iterator(String)) -> List(Int) {
