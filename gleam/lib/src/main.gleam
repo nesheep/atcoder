@@ -6,36 +6,34 @@ import gleam/result
 import gleam/string
 import stdin
 
-pub fn main() {
-  let in = stdin.stdin()
-  let _ = in |> read_int
-  let _ = in |> read_ints
-  let _ = in |> read_float
+fn read_string(in: iterator.Iterator(String)) -> String {
+  in |> iterator.first |> result.unwrap("") |> string.trim
+}
+
+fn parse_int(v: String) -> Int {
+  v |> int.parse |> result.unwrap(0)
 }
 
 fn read_int(in: iterator.Iterator(String)) -> Int {
-  in
-  |> iterator.first
-  |> result.unwrap("")
-  |> string.trim
-  |> int.parse
-  |> result.unwrap(0)
+  in |> read_string |> parse_int
 }
 
 fn read_ints(in: iterator.Iterator(String)) -> List(Int) {
-  in
-  |> iterator.first
-  |> result.unwrap("")
-  |> string.trim
-  |> string.split(" ")
-  |> list.map(fn(v) { v |> int.parse |> result.unwrap(0) })
+  in |> read_string |> string.split(" ") |> list.map(parse_int)
+}
+
+fn parse_float(v: String) -> Float {
+  v |> float.parse |> result.unwrap(0.0)
 }
 
 fn read_float(in: iterator.Iterator(String)) -> Float {
-  in
-  |> iterator.first
-  |> result.unwrap("")
-  |> string.trim
-  |> float.parse
-  |> result.unwrap(0.0)
+  in |> read_string |> parse_float
+}
+
+pub fn main() {
+  let in = stdin.stdin()
+  let _ = in |> read_string
+  let _ = in |> read_int
+  let _ = in |> read_ints
+  let _ = in |> read_float
 }
