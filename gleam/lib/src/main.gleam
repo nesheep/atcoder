@@ -10,6 +10,10 @@ fn read_string(in: iterator.Iterator(String)) -> String {
   in |> iterator.first |> result.unwrap("") |> string.trim
 }
 
+fn read_strings(in: iterator.Iterator(String)) -> List(String) {
+  in |> read_string |> string.split(" ")
+}
+
 fn parse_int(v: String) -> Int {
   v |> int.parse |> result.unwrap(0)
 }
@@ -19,7 +23,7 @@ fn read_int(in: iterator.Iterator(String)) -> Int {
 }
 
 fn read_ints(in: iterator.Iterator(String)) -> List(Int) {
-  in |> read_string |> string.split(" ") |> list.map(parse_int)
+  in |> read_strings |> list.map(parse_int)
 }
 
 fn parse_float(v: String) -> Float {
@@ -33,6 +37,7 @@ fn read_float(in: iterator.Iterator(String)) -> Float {
 pub fn main() {
   let in = stdin.stdin()
   let _ = in |> read_string
+  let _ = in |> read_strings
   let _ = in |> read_int
   let _ = in |> read_ints
   let _ = in |> read_float
