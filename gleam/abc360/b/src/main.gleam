@@ -18,20 +18,22 @@ pub fn main() {
   let assert [s, t] = in |> read_strings
 
   let ans =
-    list.range(1, string.length(s) - 1)
-    |> list.map(fn(w) {
-      list.range(0, w - 1)
-      |> list.map(fn(c) {
+    iterator.range(1, string.length(s) - 1)
+    |> iterator.map(fn(w) {
+      iterator.range(0, w - 1)
+      |> iterator.map(fn(c) {
         s
-        |> string.drop_left(c)
         |> string.to_graphemes
-        |> list.sized_chunk(w)
-        |> list.map(fn(u) { u |> list.first |> result.unwrap("") })
+        |> iterator.from_list
+        |> iterator.drop(c)
+        |> iterator.sized_chunk(w)
+        |> iterator.map(fn(u) { u |> list.first |> result.unwrap("") })
+        |> iterator.to_list
         |> string.join("")
       })
     })
-    |> list.flatten
-    |> list.any(fn(u) { u == t })
+    |> iterator.flatten
+    |> iterator.any(fn(u) { u == t })
 
   case ans {
     True -> "Yes"
