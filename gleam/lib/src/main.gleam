@@ -41,4 +41,10 @@ pub fn main() {
   let _ = in |> read_int
   let _ = in |> read_ints
   let _ = in |> read_float
+
+  let _ = [] |> to_pairs
+}
+
+fn to_pairs(l: List(a)) -> List(#(a, a)) {
+  list.zip(l, l |> list.rest |> result.unwrap([]))
 }
