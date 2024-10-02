@@ -19,7 +19,11 @@
       "id": "abc366_b",
       "label": "B",
       "title": "Vertical Writing",
-      "url": "https://atcoder.jp/contests/abc366/tasks/abc366_b"
+      "url": "https://atcoder.jp/contests/abc366/tasks/abc366_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc366_c",

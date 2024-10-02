@@ -14,6 +14,12 @@ fn read_strings(in: iterator.Iterator(String)) -> List(String) {
   in |> read_string |> string.split(" ")
 }
 
+fn read_string_lines(in: iterator.Iterator(String), n: Int) -> List(String) {
+  iterator.repeatedly(fn() { in |> read_string })
+  |> iterator.take(n)
+  |> iterator.to_list
+}
+
 fn parse_int(v: String) -> Int {
   v |> int.parse |> result.unwrap(0)
 }
@@ -38,6 +44,7 @@ pub fn main() {
   let in = stdin.stdin()
   let _ = in |> read_string
   let _ = in |> read_strings
+  let _ = in |> read_string_lines(0)
   let _ = in |> read_int
   let _ = in |> read_ints
   let _ = in |> read_float
