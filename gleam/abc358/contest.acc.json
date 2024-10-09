@@ -19,7 +19,11 @@
       "id": "abc358_b",
       "label": "B",
       "title": "Ticket Counter",
-      "url": "https://atcoder.jp/contests/abc358/tasks/abc358_b"
+      "url": "https://atcoder.jp/contests/abc358/tasks/abc358_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc358_c",
