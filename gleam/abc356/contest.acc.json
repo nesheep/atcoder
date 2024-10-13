@@ -19,7 +19,11 @@
       "id": "abc356_b",
       "label": "B",
       "title": "Nutrients",
-      "url": "https://atcoder.jp/contests/abc356/tasks/abc356_b"
+      "url": "https://atcoder.jp/contests/abc356/tasks/abc356_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc356_c",
