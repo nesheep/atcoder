@@ -1,3 +1,4 @@
+import gleam/bit_array
 import gleam/int
 import gleam/io
 import gleam/iterator
@@ -17,21 +18,21 @@ fn read_int(in: iterator.Iterator(String)) -> Int {
   in |> read_string |> parse_int
 }
 
-fn do_count(s: String, acc: Int) -> Int {
-  case s {
-    "#.#" <> rest -> do_count("#" <> rest, acc + 1)
-    "#." <> rest | ".." <> rest -> do_count(rest, acc)
-    "#" <> rest | "." <> rest -> do_count(rest, acc)
-    _ -> acc
-  }
-}
-
 pub fn main() {
   let in = stdin.stdin()
-  let _ = in |> read_int
+  let n = in |> read_int
   let s = in |> read_string
 
-  let ans = s |> do_count(0)
+  let b = bit_array.from_string(s)
+
+  let ans =
+    iterator.range(0, n - 3)
+    |> iterator.fold(0, fn(acc, i) {
+      case b |> bit_array.slice(i, 3) {
+        Ok(<<"#.#">>) -> acc + 1
+        _ -> acc
+      }
+    })
 
   ans |> int.to_string |> io.println
 }
