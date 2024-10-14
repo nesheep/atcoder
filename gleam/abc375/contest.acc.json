@@ -19,7 +19,11 @@
       "id": "abc375_b",
       "label": "B",
       "title": "Traveling Takahashi Problem",
-      "url": "https://atcoder.jp/contests/abc375/tasks/abc375_b"
+      "url": "https://atcoder.jp/contests/abc375/tasks/abc375_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc375_c",
