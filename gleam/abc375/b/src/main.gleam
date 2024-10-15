@@ -40,11 +40,9 @@ fn read_positions(
 }
 
 fn moving_cost(p: #(Float, Float), q: #(Float, Float)) -> Float {
-  let #(a, b) = p
-  let #(c, d) = q
-  let ac = float.power(a -. c, 2.0) |> result.unwrap(0.0)
-  let bd = float.power(b -. d, 2.0) |> result.unwrap(0.0)
-  float.square_root(ac +. bd) |> result.unwrap(0.0)
+  let ac = p.0 -. q.0
+  let bd = p.1 -. q.1
+  float.square_root(ac *. ac +. bd *. bd) |> result.unwrap(0.0)
 }
 
 pub fn main() {
