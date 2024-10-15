@@ -31,18 +31,21 @@ fn read_ints(in: iterator.Iterator(String)) -> List(Int) {
 fn read_positions(
   in: iterator.Iterator(String),
   n: Int,
-) -> Iterator(#(Float, Float)) {
+) -> Iterator(#(Int, Int)) {
   iterator.repeatedly(fn() {
-    let assert [x, y] = in |> read_ints |> list.map(int.to_float)
+    let assert [x, y] = in |> read_ints
     #(x, y)
   })
   |> iterator.take(n)
 }
 
-fn moving_cost(p: #(Float, Float), q: #(Float, Float)) -> Float {
-  let ac = p.0 -. q.0
-  let bd = p.1 -. q.1
-  float.square_root(ac *. ac +. bd *. bd) |> result.unwrap(0.0)
+fn moving_cost(p: #(Int, Int), q: #(Int, Int)) -> Float {
+  let ac = p.0 - q.0
+  let bd = p.1 - q.1
+  { ac * ac + bd * bd }
+  |> int.to_float
+  |> float.square_root
+  |> result.unwrap(0.0)
 }
 
 pub fn main() {
@@ -52,8 +55,8 @@ pub fn main() {
 
   let ans =
     ps
-    |> iterator.append(iterator.single(#(0.0, 0.0)))
-    |> iterator.fold(#(0.0, #(0.0, 0.0)), fn(acc, q) {
+    |> iterator.append(iterator.single(#(0, 0)))
+    |> iterator.fold(#(0.0, #(0, 0)), fn(acc, q) {
       let #(cost, p) = acc
       #(cost +. moving_cost(p, q), q)
     })
