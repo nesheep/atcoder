@@ -52,10 +52,9 @@ pub fn main() {
   let n = in |> read_int
   let ps = in |> read_positions(n)
 
-  let o = #(0.0, 0.0)
-
   let ans =
-    iterator.concat([iterator.single(o), ps, iterator.single(o)])
+    ps
+    |> iterator.append(iterator.single(#(0.0, 0.0)))
     |> iterator.fold(#(0.0, #(0.0, 0.0)), fn(acc, q) {
       let #(cost, p) = acc
       #(cost +. moving_cost(p, q), q)
