@@ -6,37 +6,27 @@ import gleam/list
 import gleam/pair
 import gleam/result
 import gleam/string
-import stdin
 
-fn read_string(in: iterator.Iterator(String)) -> String {
-  in |> iterator.first |> result.unwrap("") |> string.trim
+@external(javascript, "./js_ffi.mjs", "read_all")
+fn do_read_all() -> String
+
+pub fn read_all() -> String {
+  do_read_all()
 }
 
-fn read_strings(in: iterator.Iterator(String)) -> List(String) {
-  in |> read_string |> string.split(" ")
-}
-
-fn parse_int(v: String) -> Int {
-  v |> int.parse |> result.unwrap(0)
-}
-
-fn read_int(in: iterator.Iterator(String)) -> Int {
-  in |> read_string |> parse_int
-}
-
-fn read_ints(in: iterator.Iterator(String)) -> List(Int) {
-  in |> read_strings |> list.map(parse_int)
-}
-
-fn read_positions(
-  in: iterator.Iterator(String),
-  n: Int,
-) -> Iterator(#(Int, Int)) {
-  iterator.repeatedly(fn() {
-    let assert [x, y] = in |> read_ints
+fn parse_positions(in: String) -> Iterator(#(Int, Int)) {
+  in
+  |> string.split("\n")
+  |> iterator.from_list
+  |> iterator.drop(1)
+  |> iterator.take_while(fn(l) { l != "" })
+  |> iterator.map(fn(l) {
+    let assert [x, y] =
+      l
+      |> string.split(" ")
+      |> list.map(fn(s) { s |> int.parse |> result.unwrap(0) })
     #(x, y)
   })
-  |> iterator.take(n)
 }
 
 fn moving_cost(p: #(Int, Int), q: #(Int, Int)) -> Float {
@@ -49,9 +39,8 @@ fn moving_cost(p: #(Int, Int), q: #(Int, Int)) -> Float {
 }
 
 pub fn main() {
-  let in = stdin.stdin()
-  let n = in |> read_int
-  let ps = in |> read_positions(n)
+  let in = read_all()
+  let ps = in |> parse_positions
 
   let ans =
     ps
