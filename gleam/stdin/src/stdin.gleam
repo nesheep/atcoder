@@ -1,6 +1,8 @@
-@external(javascript, "./js_ffi.mjs", "read_all")
-fn do_read_all() -> String
+import gleam/io
 
-pub fn read_all() -> String {
-  do_read_all()
+@external(javascript, "./js_ffi.mjs", "read_all")
+fn read_all() -> String
+
+pub fn main() {
+  read_all() |> io.print
 }
