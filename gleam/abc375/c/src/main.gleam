@@ -4,24 +4,14 @@ import gleam/io
 import gleam/iterator
 import gleam/result
 import gleam/string
-import stdin
 
-fn read_string(in: iterator.Iterator(String)) -> String {
-  in |> iterator.first |> result.unwrap("") |> string.trim
-}
+@external(javascript, "./js_ffi.mjs", "read_all")
+fn read_all() -> String
 
-fn read_string_lines(in: iterator.Iterator(String), n: Int) -> List(String) {
-  iterator.repeatedly(fn() { in |> read_string })
-  |> iterator.take(n)
-  |> iterator.to_list
-}
-
-fn parse_int(v: String) -> Int {
-  v |> int.parse |> result.unwrap(0)
-}
-
-fn read_int(in: iterator.Iterator(String)) -> Int {
-  in |> read_string |> parse_int
+fn parse_input(in: String) -> #(Int, List(String)) {
+  let assert [first, ..rest] = in |> string.trim |> string.split("\n")
+  let n = first |> int.parse |> result.unwrap(0)
+  #(n, rest)
 }
 
 fn grid_dict(a: List(String)) -> Dict(#(Int, Int), String) {
@@ -61,9 +51,8 @@ fn operate(p: #(Int, Int), n: Int, cnt: Int) -> #(Int, Int) {
 }
 
 pub fn main() {
-  let in = stdin.stdin()
-  let n = in |> read_int
-  let a = in |> read_string_lines(n)
+  let in = read_all()
+  let #(n, a) = in |> parse_input
 
   let d = grid_dict(a)
 
