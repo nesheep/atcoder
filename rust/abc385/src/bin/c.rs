@@ -8,21 +8,13 @@ fn main() {
 
     let mut ans = 1;
     for i in 1..n {
-        for j in 0..i {
-            let mut cnt = 0;
-            let mut g = -1;
-            let mut k = j;
-            while k < n {
-                if h[k] == g {
-                    cnt += 1;
-                    ans = ans.max(cnt);
-                } else {
-                    cnt = 1;
-                    g = h[k];
-                }
-                k += i;
+        let mut dp = vec![1; n];
+        for j in 0..n {
+            if j >= i && h[j] == h[j - i] {
+                dp[j] = dp[j - i] + 1;
             }
         }
+        ans = ans.max(*dp.iter().max().unwrap());
     }
 
     println!("{ans}");
