@@ -29,15 +29,6 @@ fn next_state(state: State, c: char) -> State {
     }
 }
 
-fn swap<T>(v: &mut Vec<T>, i: usize, j: usize)
-where
-    T: Clone,
-{
-    let tmp = v[i].clone();
-    v[i] = v[j].clone();
-    v[j] = tmp;
-}
-
 fn main() {
     input! {
         _n: usize,
@@ -63,8 +54,8 @@ fn main() {
         .1;
 
     match v.first().unwrap() {
-        State::Zero(_) => swap(&mut v, k * 2 - 1, k * 2 - 2),
-        State::One(_) => swap(&mut v, k * 2 - 2, k * 2 - 3),
+        State::Zero(_) => v.swap(k * 2 - 1, k * 2 - 2),
+        State::One(_) => v.swap(k * 2 - 2, k * 2 - 3),
         _ => unreachable!(),
     };
 
