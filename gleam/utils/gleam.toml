@@ -1,11 +1,9 @@
-name = "main"
+name = "utils"
 version = "1.0.0"
 target = "javascript"
 
 [dependencies]
 gleam_stdlib = "== 0.53.0"
-gleam_yielder = "== 1.1.0"
-utils = { path = "../../utils" }
 
 [dev-dependencies]
 gleeunit = ">= 1.0.0 and < 2.0.0"

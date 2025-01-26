@@ -5,6 +5,6 @@ target = "javascript"
 [dependencies]
 gleam_stdlib = "== 0.53.0"
 gleam_yielder = "== 1.1.0"
-stdin = { path = "../../stdin" }
+utils = { path = "../../utils" }
 
 [dev-dependencies]
