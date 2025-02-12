@@ -1,13 +1,19 @@
 use proconio::input;
 
-fn dfs(graph: &Vec<Vec<usize>>, v: usize, visited: &mut Vec<bool>) {
+fn do_dfs(graph: &Vec<Vec<usize>>, v: usize, visited: &mut Vec<bool>) {
     visited[v] = true;
     for &u in graph[v].iter() {
         if visited[u] {
             continue;
         }
-        dfs(graph, u, visited);
+        do_dfs(graph, u, visited);
     }
+}
+
+fn dfs(graph: &Vec<Vec<usize>>, n: usize) -> Vec<bool> {
+    let mut visited = vec![false; n];
+    do_dfs(graph, 1, &mut visited);
+    visited
 }
 
 fn main() {
@@ -23,8 +29,7 @@ fn main() {
         graph[b].push(a);
     }
 
-    let mut visited = vec![false; n + 1];
-    dfs(&graph, 1, &mut visited);
+    let visited = dfs(&graph, n + 1);
     let ans = visited[1..].iter().all(|&x| x);
 
     println!(
