@@ -19,7 +19,11 @@
       "id": "abc394_b",
       "label": "B",
       "title": "cat",
-      "url": "https://atcoder.jp/contests/abc394/tasks/abc394_b"
+      "url": "https://atcoder.jp/contests/abc394/tasks/abc394_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc394_c",
