@@ -19,7 +19,11 @@
       "id": "abc396_b",
       "label": "B",
       "title": "Card Pile",
-      "url": "https://atcoder.jp/contests/abc396/tasks/abc396_b"
+      "url": "https://atcoder.jp/contests/abc396/tasks/abc396_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc396_c",
