@@ -1,3 +1,4 @@
+import gleam/float
 import gleam/int
 import gleam/list
 import gleam/string
@@ -28,6 +29,12 @@ pub fn take_string(in: List(String)) -> #(String, List(String)) {
 pub fn take_int(in: List(String)) -> #(Int, List(String)) {
   let #(v, rest) = take_string(in)
   let assert Ok(v) = int.parse(v)
+  #(v, rest)
+}
+
+pub fn take_float(in: List(String)) -> #(Float, List(String)) {
+  let #(v, rest) = take_string(in)
+  let assert Ok(v) = float.parse(v)
   #(v, rest)
 }
 
