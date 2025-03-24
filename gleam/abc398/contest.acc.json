@@ -19,7 +19,11 @@
       "id": "abc398_b",
       "label": "B",
       "title": "Full House 3",
-      "url": "https://atcoder.jp/contests/abc398/tasks/abc398_b"
+      "url": "https://atcoder.jp/contests/abc398/tasks/abc398_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc398_c",
