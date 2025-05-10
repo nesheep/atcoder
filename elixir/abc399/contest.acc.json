@@ -19,7 +19,11 @@
       "id": "abc399_b",
       "label": "B",
       "title": "Ranking with Ties",
-      "url": "https://atcoder.jp/contests/abc399/tasks/abc399_b"
+      "url": "https://atcoder.jp/contests/abc399/tasks/abc399_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc399_c",
