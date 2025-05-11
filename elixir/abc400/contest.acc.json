@@ -19,7 +19,11 @@
       "id": "abc400_b",
       "label": "B",
       "title": "Sum of Geometric Series",
-      "url": "https://atcoder.jp/contests/abc400/tasks/abc400_b"
+      "url": "https://atcoder.jp/contests/abc400/tasks/abc400_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc400_c",
