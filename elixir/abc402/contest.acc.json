@@ -19,7 +19,11 @@
       "id": "abc402_b",
       "label": "B",
       "title": "Restaurant Queue",
-      "url": "https://atcoder.jp/contests/abc402/tasks/abc402_b"
+      "url": "https://atcoder.jp/contests/abc402/tasks/abc402_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc402_c",
