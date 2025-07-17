@@ -19,7 +19,11 @@
       "id": "abc406_b",
       "label": "B",
       "title": "Product Calculator",
-      "url": "https://atcoder.jp/contests/abc406/tasks/abc406_b"
+      "url": "https://atcoder.jp/contests/abc406/tasks/abc406_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc406_c",
