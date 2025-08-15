@@ -24,12 +24,9 @@ func main() {
 
 	for i := 1; i <= n; i++ {
 		for j := 0; j <= w; j++ {
-			if dp[i-1][j] < 0 {
-				continue
-			}
-			dp[i][j] = max(dp[i-1][j], dp[i][j])
-			if j+ws[i] <= w {
-				dp[i][j+ws[i]] = dp[i-1][j] + vs[i]
+			dp[i][j] = dp[i-1][j]
+			if j-ws[i] >= 0 && dp[i-1][j-ws[i]] >= 0 {
+				dp[i][j] = max(dp[i][j], dp[i-1][j-ws[i]]+vs[i])
 			}
 		}
 	}
