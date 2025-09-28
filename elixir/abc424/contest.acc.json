@@ -19,7 +19,11 @@
       "id": "abc424_b",
       "label": "B",
       "title": "Perfect",
-      "url": "https://atcoder.jp/contests/abc424/tasks/abc424_b"
+      "url": "https://atcoder.jp/contests/abc424/tasks/abc424_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc424_c",
