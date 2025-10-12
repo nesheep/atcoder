@@ -19,7 +19,11 @@
       "id": "abc425_b",
       "label": "B",
       "title": "Find Permutation 2",
-      "url": "https://atcoder.jp/contests/abc425/tasks/abc425_b"
+      "url": "https://atcoder.jp/contests/abc425/tasks/abc425_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc425_c",
