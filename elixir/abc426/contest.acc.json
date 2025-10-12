@@ -19,7 +19,11 @@
       "id": "abc426_b",
       "label": "B",
       "title": "The Odd One Out",
-      "url": "https://atcoder.jp/contests/abc426/tasks/abc426_b"
+      "url": "https://atcoder.jp/contests/abc426/tasks/abc426_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc426_c",
