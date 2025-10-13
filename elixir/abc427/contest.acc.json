@@ -19,7 +19,11 @@
       "id": "abc427_b",
       "label": "B",
       "title": "Sum of Digits Sequence",
-      "url": "https://atcoder.jp/contests/abc427/tasks/abc427_b"
+      "url": "https://atcoder.jp/contests/abc427/tasks/abc427_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc427_c",
