@@ -19,7 +19,11 @@
       "id": "abc423_b",
       "label": "B",
       "title": "Locked Rooms",
-      "url": "https://atcoder.jp/contests/abc423/tasks/abc423_b"
+      "url": "https://atcoder.jp/contests/abc423/tasks/abc423_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests"
+      }
     },
     {
       "id": "abc423_c",
