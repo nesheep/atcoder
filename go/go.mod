@@ -1,3 +1,3 @@
 module github.com/nesheep/atcoder
 
-go 1.20
+go 1.25.1
