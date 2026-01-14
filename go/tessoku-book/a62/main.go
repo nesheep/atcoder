@@ -6,13 +6,13 @@ import (
 )
 
 func main() {
-	n, _, g := input()
-	ans := isConnected(g, n)
+	_, _, g := input()
+	ans := isConnected(g)
 	output(ans)
 }
 
-func isConnected(g [][]int, n int) bool {
-	acc := make([]bool, n)
+func isConnected(g [][]int) bool {
+	acc := make([]bool, len(g))
 	dfs(g, 0, acc)
 	return !slices.Contains(acc, false)
 }
