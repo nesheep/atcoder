@@ -12,9 +12,11 @@ defmodule Main do
 
     g =
       ab
-      |> Enum.chunk_every(2)
-      |> Enum.reduce(Graph.new(type: :undirected), fn [a, b], g ->
-        Graph.add_edge(g, a, b)
+      |> Stream.chunk_every(2)
+      |> Enum.reduce(%{}, fn [a, b], g ->
+        g
+        |> Map.update(a, [b], &[b | &1])
+        |> Map.update(b, [a], &[a | &1])
       end)
 
     {n, m, g}
@@ -22,7 +24,7 @@ defmodule Main do
 
   defp output({n, _, g}) do
     Enum.each(1..n, fn v ->
-      neighbors = Graph.neighbors(g, v) |> Enum.sort()
+      neighbors = Map.get(g, v, []) |> Enum.sort()
       IO.puts("#{v}: {#{Enum.join(neighbors, ", ")}}")
     end)
   end
